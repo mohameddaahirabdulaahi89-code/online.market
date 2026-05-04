@@ -34,9 +34,70 @@ header{
     z-index:1000;
 }
 
-/* LOGO */
-header h1 span{
-    color:#4f46e5;
+/* NAV DEFAULT (DESKTOP) */
+#nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* LINKS */
+#nav a{
+    color:white;
+    text-decoration:none;
+    padding:5px 10px;
+    transition:0.3s;
+}
+
+#nav a:hover{
+    background:#0044ff;
+    border-radius:5px;
+}
+
+/* MENU BUTTON */
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+
+    header{
+        flex-wrap:wrap;
+    }
+
+    /* HIDE MENU */
+    #nav{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#0f172a;
+        margin-top:10px;
+        text-align:center;
+    }
+
+    /* SHOW WHEN ACTIVE */
+    #nav.active{
+        display:flex;
+    }
+
+    #nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    /* SHOW BUTTON */
+    .menu-toggle{
+        display:block;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
 }
 
 /* NAV LINKS */
