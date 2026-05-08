@@ -171,6 +171,12 @@ nav a:hover{
     color:black;
     text-decoration:none;
 }
+.btn:hover{
+    background:orange;
+    color:white;
+    box-shadow: 2px 2px 10px rgb(245, 215, 215);
+    cursor: pointer;
+}
 
 /* PRODUCTS */
 .products{
@@ -232,6 +238,15 @@ nav a:hover{
     background:#0f172a;
     color:white;
     border:none;
+    padding: 10px 20px;
+     transition:0.3s;
+}
+.contact button:hover{
+    background:#2563eb;
+    cursor:pointer;
+    border: 1px solid #2563eb;
+     box-shadow: 2px 2px 10px rgb(43, 36, 36);
+     border-radius: 50px;
 }
 
 /* FOOTER */
@@ -419,4 +434,17 @@ h3{
         display: block;
         margin: 10px 0;
     }
+    .btn{
+    margin-top:20px;
+    padding:10px 20px;
+    background:yellow;
+    color:black;
+    text-decoration:none;
+}
+.btn:hover{
+    background:orange;
+    color:white;
+    box-shadow: 2px 2px 10px rgb(245, 215, 215);
+    cursor: pointer;
+}
 }
